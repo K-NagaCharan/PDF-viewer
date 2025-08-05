@@ -13,14 +13,16 @@ A lightweight, browser-based PDF viewer and editor built with HTML, CSS, and Jav
 
 ⚡ Fast and interactive UI with scroll-based page detection and dynamic updates
 
+
 🛠️ Tech Stack
-PDF.js – for rendering PDF documents in the browser
 
-PDF-lib – for editing PDFs (adding/removing pages)
+-> PDF.js – for rendering PDF documents in the browser
 
-Vanilla JS – for DOM manipulation, event handling, and UI logic
+-> PDF-lib – for editing PDFs (adding/removing pages)
 
-HTML/CSS – for layout, styling, and responsive design
+-> Vanilla JS – for DOM manipulation, event handling, and UI logic
+
+-> HTML/CSS – for layout, styling, and responsive design
 
 🚀 Use Case
 Ideal for developers, educators, and professionals who need a quick and interactive way to view and edit PDFs directly in the browser—no downloads or installations required.
