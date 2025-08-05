@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="https://unpkg.com/downloadjs@1.4.7"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="fix">
+        <div class="head">
+            <div class="add">
+                <button onclick="addPage()">add</button>
+                <input class="addAt" type="number" placeholder="Page No. at which to add">
+            </div>
+            <div class="remove">
+                <button onclick="removePage()">remove</button>
+                <input class="removeAt" type="number" placeholder="Page No. at which to remove">
+            </div>
+            <div class="zoom">
+                <button onclick="zoomIn()">Zoom In</button>
+                <input class="zoomVal" type="number" placeholder="100" onkeydown="handleZoom(event)">
+                <button onclick="zoomOut()">Zoom Out</button>
+            </div>
+            <button class="download" onclick="downloadPDF()">download</button>
+        </div>
+    </div>
+    <!-- <iframe id="pdf"></iframe> -->
+    <div id="pdf-container"></div>
+    <div class="navigate">
+        <div class="navg">
+            <button class="pre" onclick="previous()">Previous</button>
+            <input class="pageNo" type="number" onkeydown="goTo()">
+            <!-- <p class="total"></p> -->
+            <button class="next" onclick="next()">Next</button>
+        </div> 
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
